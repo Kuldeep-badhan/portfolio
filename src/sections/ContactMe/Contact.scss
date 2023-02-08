@@ -1,0 +1,148 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  @include flex-column;
+  margin-bottom: 5rem;
+  align-items: center;
+  gap: 1rem;
+  > p {
+    color: var(--text-color-light);
+  }
+  > h2 {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  &__container {
+    display: flex;
+    gap: 8rem;
+    &--cards {
+      flex: 1;
+      @include flex-column;
+      gap: 1.2rem;
+      .card {
+        @include flex-column;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid var(--hover-color);
+        background-color: var(--hover-color);
+        padding: 1.7rem;
+        border-radius: 1rem;
+        transition: var(--transition);
+        &:hover {
+          border: 1px solid var(--primary-color);
+          background-color: transparent;
+        }
+        .icon {
+          font-size: 1.5rem;
+          color: white;
+        }
+        .tag {
+          color: white;
+        }
+        .contact__info {
+          color: var(--text-color-light);
+        }
+        > a {
+          color: var(--primary-color);
+          text-decoration: none;
+          transition: var(--transition);
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    &--form {
+      flex: 1;
+      form {
+        @include flex-column;
+        gap: 2rem;
+        > input,
+        textarea {
+          background-color: transparent;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          border: 2px solid var(--hover-color);
+          transition: var(--transition);
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 300;
+          &:hover {
+            border-color: var(--primary-color);
+          }
+          &:focus {
+            border-color: var(--primary-color);
+          }
+        }
+
+        button {
+          padding-block: clamp(0.5rem, 1vw, 0.8rem);
+          padding-inline: clamp(0.5rem, 1vw, 1rem);
+          font-size: clamp(0.9rem, 3vw, 1rem);
+          border-radius: 0.5rem;
+          width: 10rem;
+          border: 1px solid var(--primary-color);
+          cursor: pointer;
+          transition: var(--transition);
+          background-color: var(--primary-color);
+          color: black;
+          font-weight: 300;
+          &:hover {
+            border: 1px solid var(white);
+            background-color: white;
+          }
+          // a {
+          //   text-decoration: none;
+          //   color: black;
+          // }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 1rem;
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      &--cards {
+        // flex-direction: row;
+        // justify-content: center;
+        // flex-wrap: wrap;
+        width: 60vw;
+        .cards {
+          width: 100%;
+        }
+      }
+      &--form {
+        width: 60vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .contact {
+    padding: 1rem;
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      &--cards {
+        width: 80vw;
+        .cards {
+          width: 100%;
+        }
+      }
+      &--form {
+        width: 80vw;
+      }
+    }
+  }
+}

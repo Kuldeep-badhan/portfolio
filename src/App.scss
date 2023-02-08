@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #4baff8;
+  --secondary-color: #1f1f38;
+  --hover-color: #2c2c6c;
+  --text-color-light: #a9a9c3;
+  --text-color-white: #fff;
+  --transition: all 0.3s;
+}
+
+.app {
+  background-color: var(--secondary-color);
+}
