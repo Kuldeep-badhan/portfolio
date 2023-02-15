@@ -77,12 +77,6 @@ const Experience = () => {
                 </span>
                 <strong>Mongoose</strong>
               </div>
-              <div className="skill">
-                <span>
-                  <HiBadgeCheck className="badge__icon" />
-                </span>
-                <strong>Strapi</strong>
-              </div>
             </div>
           </div>
         </div>

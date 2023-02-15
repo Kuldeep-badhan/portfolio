@@ -20,7 +20,7 @@
   &__container {
     display: flex;
     gap: 2rem;
-    width: 1000px;
+    width: 80vw;
     &--frontend,
     &--backend {
       flex: 1;
@@ -71,10 +71,8 @@
     height: unset;
     margin-bottom: 5rem;
     &__container {
-      width: 900px;
       &--frontend,
       &--backend {
-        // width: 380px;
         padding: 2rem 3rem;
         > h2 {
           font-size: 1.3rem;
