@@ -9,10 +9,29 @@ import countries from "../../assets/countries.png";
 import travel from "../../assets/travel.png";
 import stackoverflow from "../../assets/stackoverflow.png";
 import twitter from "../../assets/twitter.png";
+import mansar from "../../assets/mansar.png";
 import "./Portfolio.scss";
 import PortfolioCard from "../../components/PortfolioCard/PortfolioCard";
 const Portfolio = () => {
   const projectArray = [
+    {
+      id: 0,
+      desc: "This is a responsive clone website of mansar news uae.",
+      imgSrc: mansar,
+      link: "https://masdar-news.vercel.app/",
+    },
+    {
+      id: 4,
+      desc: "This is a clone website of deyaar facilities.",
+      imgSrc: deyaar,
+      link: "https://deyaar-facilities.vercel.app/",
+    },
+    {
+      id: 9,
+      desc: " This is a stackoverflow clone website.",
+      imgSrc: stackoverflow,
+      link: "https://stack-over-flow-frontend.onrender.com/",
+    },
     {
       id: 1,
       desc: "This is a demo video upload and play UI",
@@ -31,12 +50,7 @@ const Portfolio = () => {
       imgSrc: crypto,
       link: "https://crypto-app-one-eta.vercel.app/",
     },
-    {
-      id: 4,
-      desc: "This is a clone website of deyaar facilities.",
-      imgSrc: deyaar,
-      link: "https://deyaar-facilities.vercel.app/",
-    },
+
     {
       id: 5,
       desc: " This is a messaging app. It has all the basic features of a chat app. Like authentication, chating.",
@@ -60,12 +74,6 @@ const Portfolio = () => {
       desc: "This is a travel website.",
       imgSrc: travel,
       link: "https://tourism-website-psi.vercel.app/",
-    },
-    {
-      id: 9,
-      desc: " This is a stackoverflow clone website.",
-      imgSrc: stackoverflow,
-      link: "https://stack-over-flow-frontend.onrender.com/",
     },
   ];
   return (

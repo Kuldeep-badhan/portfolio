@@ -35,12 +35,11 @@ const About = () => {
               </div>
             </div>
             <div className="about__container--right--desc">
-              I am a tech enthusiast really interested in software development.
-              I have been doing the web development for more than 11 months now
-              and it has been a great experience. I've learnt the popular MERN
-              stack. I have also made some full stack projects. I look forward
-              to work with a company where I can learn and grow my development
-              skills.
+              I am passionate about Web development. I have been doing the web
+              development for more than an year now and it has been a great
+              experience. I've learnt the popular MERN stack. I have also made
+              some full stack projects. I look forward to work with a company
+              where I can learn and grow my development skills.
             </div>
             <div className="about__container--right--btn">
               <a href="#contact">
