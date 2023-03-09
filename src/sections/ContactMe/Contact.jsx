@@ -62,8 +62,8 @@ const Contact = () => {
                 <AiOutlineWhatsApp className="icon" />
               </span>
               <span className="tag">Whatsapp</span>
-              <small className="contact__info">+971 54 469 7789</small>
-              <a href="https://wa.me/+971544697789" target={"blank"}>
+              <small className="contact__info">+91 78146-20328</small>
+              <a href="https://wa.me/+917814620328" target={"blank"}>
                 Send a message
               </a>
             </div>
