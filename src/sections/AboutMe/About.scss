@@ -42,11 +42,11 @@
           transparent
         );
         border-radius: 2rem;
-        height: 270px;
-        width: 300px;
+        height: 320px;
+        width: 350px;
         img {
-          height: 270px;
-          width: 300px;
+          height: 320px;
+          width: 350px;
           border-radius: 2rem;
           transform: rotate(10deg);
           transition: var(--transition);
@@ -66,14 +66,14 @@
         .card {
           @include flex-column;
           align-items: center;
-          gap: 1.5rem;
+          gap: 2rem;
           padding: 1rem 0.5rem;
           border-radius: 2rem;
           border: 1px solid var(--hover-color);
           background-color: var(--hover-color);
           transition: var(--transition);
-          height: 160px;
-          width: 160px;
+          height: 190px;
+          width: 190px;
           &:hover {
             background-color: transparent;
             border: 1px solid var(--primary-color);
@@ -115,6 +115,18 @@
   .about {
     height: unset;
     margin-bottom: 8rem;
+    &__container {
+      &--left {
+        .background {
+          height: 300px;
+          width: 320px;
+          img {
+            height: 300px;
+            width: 320px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -127,12 +139,27 @@
       padding: 0;
       &--left {
         align-self: center;
+        .background {
+          height: 270px;
+          width: 300px;
+          img {
+            height: 270px;
+            width: 300px;
+          }
+        }
       }
       &--right {
+        align-items: center;
         &--cards {
           justify-content: center;
+          .card {
+            height: 160px;
+            width: 160px;
+            gap: 1.5rem;
+          }
         }
         &--desc {
+          width: 95%;
           text-align: center;
         }
         &--btn {
