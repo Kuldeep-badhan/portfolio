@@ -24,7 +24,7 @@ const About = () => {
                   <SlBadge />
                 </span>
                 <p className="card__tag">Experience</p>
-                <small className="card__desc">11+ Months Experience</small>
+                <small className="card__desc">13+ Months Experience</small>
               </div>
               <div className="card">
                 <span className="card__icon">
